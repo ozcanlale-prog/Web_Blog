@@ -12,12 +12,6 @@ https://github.com/user-attachments/assets/7617bbf9-8500-4185-884e-fa8fb45cfae7
 
 ---
 
-# SB Admin Blog Project
-
-Bu çalışma, SB Admin şablonunun bir blog sitesine uyarlanmasıyla oluşturulmuş bir arayüz denemesidir. Mevcut bir yapıyı özelleştirerek sade ve kullanışlı bir blog tasarımı elde edilmesi hedeflenmiştir.
-
----
-
 ## 🛠️ Özellikler
 
 * **Tam Uyumluluk:** Mobil cihazlarda ve masaüstünde sorunsuz görüntüleme.
