@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="tr" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Uzay ve gezegenler üzerine bir blog">
+    <title>Blog Şablonu · Bootstrap v5.3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900&amp;display=swap" rel="stylesheet">
+    <style>
+      .blog-header-logo { font-family: "Playfair Display", Georgia, "Times New Roman", serif; font-size: 2.25rem; }
+      .nav-scroller { position: relative; z-index: 2; height: 2.75rem; overflow-y: hidden; }
+      .nav-scroller .nav { display: flex; flex-wrap: nowrap; padding-bottom: 1rem; margin-top: -1px; overflow-x: auto; text-align: center; white-space: nowrap; -webkit-overflow-scrolling: touch; }
+      .blog-post { margin-bottom: 4rem; }
+      .blog-post-title { margin-bottom: .25rem; font-size: 2.5rem; }
+      .blog-post-meta { margin-bottom: 1.25rem; color: #727272; }
+
+      /* Video Arka Plan Ayarları */
+      body { background-color: transparent !important; margin: 0; padding: 0; overflow-x: hidden; }
+      
+      .video-bg {
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100%;
+        z-index: -1; 
+        overflow: hidden;
+      }
+      
+      .video-bg video {
+        min-width: 100%; 
+        min-height: 100%; 
+        object-fit: cover;
+      }
+
+      /* İçeriğin arkasını kapatmak ve kenarları boş bırakmak için */
+      .content-wrapper { 
+        background-color: transparent; 
+        position: relative; 
+        z-index: 1; 
+        min-height: 100vh;
+      }
+      
+      /* Sadece yazıların olduğu orta bloğa renk veriyoruz */
+      .container { 
+        background-color: #212529; 
+        box-shadow: 0 0 50px rgba(0,0,0,0.5);
+      }
+
+      /* Alt kısımdaki gri alanları da ana temaya uyduruyoruz */
+      .bg-body-tertiary, .bg-body-secondary {
+        background-color: #2b3035 !important;
+      }
+
+      /* --- SB ADMIN 2 MODAL STİLLERİ --- */
+      .modal-content {
+        background-color: rgba(33, 37, 41, 0.98);
+        border: 1px solid #444;
+        border-radius: 1.25rem;
+      }
+      .btn-primary {
+        background-color: #dc392d;
+        border: none;
+      }
+      .btn-primary:hover {
+        background-color: #b02e24;
+      }
+      .form-control-user {
+        border-radius: 10rem;
+        padding: 1.25rem;
+        background-color: #2b3035;
+        border: 1px solid #495057;
+        color: white;
+      }
+      .form-control-user:focus {
+        background-color: #32383e;
+        color: white;
+        border-color: #dc392d;
+        box-shadow: none;
+      }
+    </style>
+  </head>
+  <body>
+
+<div class="video-bg">
+  <video autoplay loop muted playsinline>
+    <source src="c:\Users\özcan\Downloads\nebula.3840x2160.mp4" type="video/mp4">
+    Tarayıcınız video etiketini desteklemiyor.
+  </video>
+</div>
+
+<div class="content-wrapper">
+<div class="container">
+  <header class="border-bottom lh-1 py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-4 pt-1">
+        <a class="link-secondary text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Giriş Yap</a>
+      </div>
+      <div class="col-4 text-center">
+        <a class="blog-header-logo text-body-emphasis text-decoration-none" href="#">Kozmos</a>
+      </div>
+      <div class="col-4 d-flex justify-content-end align-items-center">
+        <a class="link-secondary me-3" href="#" aria-label="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"></circle><path d="M21 21l-5.2-5.2"></path></svg>
+        </a>
+        <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#registerModal">Kayıt Ol</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="nav-scroller py-1 mb-3 border-bottom">
+    <nav class="nav nav-underline justify-content-between">
+      <a class="nav-item nav-link link-body-emphasis active" href="#">Dünya</a>
+      <a class="nav-item nav-link link-body-emphasis" href="#">Mars</a>
+      <a class="nav-item nav-link link-body-emphasis" href="#">Ay</a>
+      <a class="nav-item nav-link link-body-emphasis" href="#">Teknoloji</a>
+      <a class="nav-item nav-link link-body-emphasis" href="#">Bilim</a>
+      <a class="nav-item nav-link link-body-emphasis" href="#">Güneş</a>
+      <a class="nav-item nav-link link-body-emphasis" href="#">Yıldızlar</a>
+      <a class="nav-item nav-link link-body-emphasis" href="#">Galaksiler</a>
+    </nav>
+  </div>
+</div>
+
+<main class="container">
+  <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+    <div class="col-lg-6 px-0">
+      <h1 class="display-4 fst-italic">İnsanlık Ay'a neden gitmemeli?</h1>
+      <p class="lead my-3">İnsanlığın Ay'dan öğreneceği çok şey olduğu bir gerçek lakin Ay'a kıyasla bilime ve insanlığa katkısı daha fazla olabilecek yerler de var. Bunların başında kuru buz gölleri ve mineralleriyle Mars geliyor.</p>
+      <p class="lead mb-0"><a href="#" class="text-body-emphasis fw-bold">Okumaya devam edin...</a></p>
+    </div>
+  </div>
+
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary-emphasis">Dünya</strong>
+          <h3 class="mb-0">Öne Çıkan</h3>
+          <div class="mb-1 text-body-secondary">24 Mart</div>
+          <p class="card-text mb-auto">İnsanlığın Ay'dan öğreneceği çok şey olduğu bir gerçek lakin Ay'a kıyasla bilime katkısı daha fazla yerler var.</p>
+          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">Okumaya devam edin</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="c:\Users\özcan\Desktop\Dersler\İletişim ve Sunum Teknikleri\Web\turkiyeden-super-ay-manzaralari-thumb-2.jpg" alt="Detaylı Ay ve blurred ışık manzarası" width="200" height="250" style="object-fit: cover;">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success-emphasis">Fizik</strong>
+          <h3 class="mb-0">Anti Madde</h3>
+          <div class="mb-1 text-body-secondary">11 Nisan</div>
+          <p class="mb-auto">Cern tarafından üretilen anti madde, özel bir araç ile taşınmayı başardı. Bu, fizik dünyasında yeni bir aşama.</p>
+          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">Okumaya devam edin</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="c:\Users\özcan\Desktop\Dersler\İletişim ve Sunum Teknikleri\Web\images (1).jpeg" alt="Detaylı Ay ve blurred ışık manzarası" width="200" height="250" style="object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-5">
+    <div class="col-md-8">
+      <h3 class="pb-4 mb-4 fst-italic border-bottom">Günün Yazısı</h3>
+
+      <article class="blog-post">
+        <h2 class="display-5 link-body-emphasis mb-1">Mars'ın Denizleri</h2>
+        <p class="blog-post-meta">23 Nisan, 2026 by <a href="#">Özcan</a></p>
+
+        <p>Dünyamızın ve yaşamın vazgeçilmez bir parçası olan büyük uçsuz ve bucaksız denizler. Dünya gibi bir zamanlar okyanuslara sahip olan bir gezegen vardı: Mars. Mars'ın 580 milyon yıl önce kaybetmeye başladığı denizlerinden geriye kutuplarında donmuş halde toprağın içinde yarı gömülü bulunan buzullarından başka bir şey kalmadı.</p>
+        <hr>
+        <p>Mars'ın yaklaşık 3.8 milyar yıl önce Kuzey Yarımküresi'ni kaplayan devasa bir okyanusa sahip olduğu düşünülüyor. Bugün ise bu sudan geriye kalan tek şey, kutuplarda ve toprak altında hapsolmuş buz kütleleri.</p>
+        
+        <blockquote>
+          <p>Düşük yerçekimi ve manyetik alanın zayıflığı, güneş rüzgarlarının atmosferi süpürmesine neden oldu. Okyanuslar ya uzaya kaçtı ya da yüzeyin altına çekilerek dondu.</p>
+        </blockquote>
+
+        <h3>Mars'taki Su Rezervleri</h3>
+        <ul>
+          <li><strong>Kutup Buzulları:</strong> Kuzey ve güney kutuplarında donmuş su buzu.</li>
+          <li><strong>Yeraltı Katmanları:</strong> Toprak içinde yarı gömülü buzullar.</li>
+          <li><strong>Tuzlu İzler:</strong> Yüzeyde mevsimsel olarak görülen nem akıntıları.</li>
+        </ul>
+
+        <h3>Geçmişten Günümüze Mars</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Dönem</th>
+              <th>Su Durumu</th>
+              <th>Atmosfer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Noachian</td>
+              <td>Derin Okyanuslar</td>
+              <td>Yoğun ve Sıcak</td>
+            </tr>
+            <tr>
+              <td>Hesperian</td>
+              <td>Bölgesel Göller</td>
+              <td>İncelmeye Başlayan</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article class="blog-post">
+        <h2 class="display-5 link-body-emphasis mb-1">Ay'ın Hayalet Denizleri</h2>
+        <p class="blog-post-meta">24 Mart, 2026 by <a href="#">Enis</a></p>
+        <p>Gece gökyüzüne baktığımızda Ay'ın yüzeyindeki o geniş, karanlık lekeleri hemen fark ederiz. İlk gözlemciler buraları su sanmıştı, oysa onlar donmuş lav ovalarıdır.</p>
+        
+        <p>Latince'de "deniz" anlamına gelen <strong>Maria</strong> olarak adlandırılan bu bölgeler, aslında yaklaşık 3 ila 3.5 milyar yıl önce gerçekleşen devasa volkanik patlamaların sonucudur. Ay'ın ince kabuğundan sızan bazaltik lavlar, derin kraterleri doldurarak bugünkü pürüzsüz ve karanlık görünümü oluşturmuştur.</p>
+
+        <h3>Neden Sadece Bir Yüzde?</h3>
+        <p>İlginç bir şekilde, bu "denizlerin" büyük çoğunluğu Ay'ın bize bakan yüzünde bulunur. Ay'ın uzak yüzü (karanlık yüzü değil, bize dönük olmayan yüzü) çok daha fazla kraterle doludur ve neredeyse hiç deniz barındırmaz. Bilim insanları bunun nedenini, Ay'ın bize bakan yüzündeki kabuğun daha ince olmasına bağlamaktadır.</p>
+
+        <ul>
+          <li><strong>Sessizlik Denizi (Mare Tranquillitatis):</strong> Apollo 11'in iniş yaptığı, tarihin en ünlü lav ovası.</li>
+          <li><strong>Fırtınalar Okyanusu (Oceanus Procellarum):</strong> Ay'daki en geniş maria bölgesi.</li>
+          <li><strong>Yağmurlar Denizi (Mare Imbrium):</strong> Çevresi devasa dağ sıralarıyla çevrili olan bölge.</li>
+        </ul>
+        
+        <p>Bugün bu hayalet denizler, Ay'ın jeolojik tarihini okuduğumuz devasa birer arşiv niteliğindedir. Onlara her baktığımızda, bir zamanlar sıcak ve hareketli olan bir dünyanın sessiz tanıklarını görürüz.</p>
+      </article>
+
+      <nav class="blog-pagination" aria-label="Pagination">
+        <a class="btn btn-outline-primary rounded-pill" href="#">Eski Yazılar</a>
+        <a class="btn btn-outline-secondary rounded-pill disabled" aria-disabled="true">Yeni Yazılar</a>
+      </nav>
+    </div>
+
+    <div class="col-md-4">
+      <div class="position-sticky" style="top: 2rem;">
+        <div class="p-4 mb-3 bg-body-tertiary rounded">
+          <h4 class="fst-italic">Hakkında</h4>
+          <p class="mb-0">Kozmos Günlükleri, evrenin gizemlerini ve gök cisimlerinin tarihini inceleyen bilimsel bir blogdur.</p>
+        </div>
+
+        <div>
+          <h4 class="fst-italic">Son Yazılar</h4>
+          <ul class="list-unstyled">
+            <li>
+              <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
+                <img src="jupiter-puny.jpeg" alt="Jüpiter ve Europa" width="100%" height="96" style="object-fit: cover; border-radius: 6px;">
+                <div class="col-lg-8">
+                    <h6 class="mb-0">Jüpiter'in Buzlu Uydusu: Europa</h6>
+                    <small class="text-body-secondary">15 Ocak, 2024</small>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
+                <img src="c:\Users\özcan\Desktop\Dersler\İletişim ve Sunum Teknikleri\Web\images (3).jpeg" alt="Satürn" width="100%" height="96" style="object-fit: cover; border-radius: 6px;">
+                <div class="col-lg-8">
+                    <h6 class="mb-0">Satürn'ün Halkaları Kayboluyor mu?</h6>
+                    <small class="text-body-secondary">14 Ocak, 2024</small>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
+                <img src="c:\Users\özcan\Desktop\Dersler\İletişim ve Sunum Teknikleri\Web\iStock-2083530475-865493.jpg" alt="Güneş" width="100%" height="96" style="object-fit: cover; border-radius: 6px;">
+                <div class="col-lg-8">
+                    <h6 class="mb-0">Güneş Patlamalarının Dünya'ya Etkisi</h6>
+                    <small class="text-body-secondary">13 Ocak, 2024</small>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="p-4">
+          <h4 class="fst-italic">Arşiv</h4>
+          <ol class="list-unstyled mb-0">
+            <li><a href="#">Mart 2024</a></li>
+            <li><a href="#">Şubat 2024</a></li>
+            <li><a href="#">Ocak 2024</a></li>
+          </ol>
+        </div>
+
+        <div class="p-4">
+          <h4 class="fst-italic">Bizi Takip Edin</h4>
+          <ol class="list-unstyled">
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="py-5 text-center text-body-secondary bg-body-tertiary">
+  <p>Ölmek ile yaşamak arasında ince bir çizgi vardır aşk. Aşk ile delilik arasında da ince bir çizgi vardır...</p>
+  <p class="mb-0"><a href="#">Başa Dön</a></p>
+</footer>
+</div>
+
+<div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-5">
+      <div class="text-center"><h1 class="h4 text-white mb-4">Tekrar Hoş Geldiniz!</h1></div>
+      <form class="user">
+        <div class="mb-3"><input type="email" class="form-control form-control-user" placeholder="E-posta Adresini Giriniz..."></div>
+        <div class="mb-3"><input type="password" class="form-control form-control-user" placeholder="Şifre"></div>
+        <button type="submit" class="btn btn-primary btn-user w-100 rounded-pill py-2">Giriş Yap</button>
+      </form>
+      <hr>
+      <div class="text-center small">
+        <a class="text-secondary text-decoration-none d-block mb-1" href="#" data-bs-toggle="modal" data-bs-target="#forgotModal" data-bs-dismiss="modal">Şifremi Unuttum?</a>
+        <a class="text-secondary text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#registerModal" data-bs-dismiss="modal">Yeni Hesap Oluştur!</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="registerModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-5">
+      <div class="text-center"><h1 class="h4 text-white mb-4">Hesap Oluştur!</h1></div>
+      <form class="user">
+        <div class="row mb-3">
+          <div class="col-sm-6 mb-3 mb-sm-0"><input type="text" class="form-control form-control-user" placeholder="Ad"></div>
+          <div class="col-sm-6"><input type="text" class="form-control form-control-user" placeholder="Soyad"></div>
+        </div>
+        <div class="mb-3"><input type="email" class="form-control form-control-user" placeholder="E-posta Adresi"></div>
+        <div class="mb-3"><input type="password" class="form-control form-control-user" placeholder="Şifre"></div>
+        <button type="submit" class="btn btn-primary btn-user w-100 rounded-pill py-2">Hesabı Kaydet</button>
+      </form>
+      <hr>
+      <div class="text-center small">
+        <a class="text-secondary text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal">Zaten bir hesabın var mı? Giriş yap!</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="forgotModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-5">
+      <div class="text-center">
+        <h1 class="h4 text-white mb-2">Şifrenizi mi Unuttunuz?</h1>
+        <p class="mb-4 small text-secondary">E-posta adresinizi girin, şifrenizi sıfırlamanız için bir bağlantı gönderelim!</p>
+      </div>
+      <form class="user">
+        <div class="mb-3">
+          <input type="email" class="form-control form-control-user" placeholder="E-posta Adresini Giriniz...">
+        </div>
+        <button type="submit" class="btn btn-primary btn-user w-100 rounded-pill py-2">Şifreyi Sıfırla</button>
+      </form>
+      <hr>
+      <div class="text-center small">
+        <a class="text-secondary text-decoration-none d-block mb-1" href="#" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal">Geri Dön</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>
