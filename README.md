@@ -12,6 +12,31 @@ https://github.com/user-attachments/assets/7617bbf9-8500-4185-884e-fa8fb45cfae7
 
 ---
 
+
+<img width="1919" height="1079" alt="Ekran görüntüsü 2026-04-24 155238" src="https://github.com/user-attachments/assets/a07d617f-866a-465f-b837-b5bdd9dbeb57" />
+
+
+---
+
+
+<img width="1919" height="1079" alt="Ekran görüntüsü 2026-04-24 155246" src="https://github.com/user-attachments/assets/c5af25b4-53cf-4ec8-bb1d-e1ee62b18ef9" />
+
+
+---
+
+
+<img width="1919" height="1079" alt="Ekran görüntüsü 2026-04-24 155254" src="https://github.com/user-attachments/assets/569c4b85-ac4a-4ed4-9628-d3179e26d00e" />
+
+
+---
+
+
+<img width="1919" height="1079" alt="Ekran görüntüsü 2026-04-24 155307" src="https://github.com/user-attachments/assets/0a71e147-3eb1-4e40-899b-e75922a93047" />
+
+
+---
+
+
 ## 🛠️ Özellikler
 
 * **Tam Uyumluluk:** Mobil cihazlarda ve masaüstünde sorunsuz görüntüleme.
