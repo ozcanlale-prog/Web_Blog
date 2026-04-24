@@ -6,6 +6,12 @@ Bu proje, **SB Admin** altyapısı kullanılarak modern web standartlarına uygu
 
 ---
 
+
+https://github.com/user-attachments/assets/7617bbf9-8500-4185-884e-fa8fb45cfae7
+
+
+---
+
 ## 🛠️ Teknik Özellikler
 
 * **Responsive Mimari:** Bootstrap 5 grid sistemi kullanılarak tüm ekran boyutlarına (Mobil, Tablet, Masaüstü) uyumlu hale getirilmiştir.
