@@ -1,6 +1,6 @@
 # Web_Blog
 
-# SB Admin Blog Implementation
+# SB Admin Blog Çalışması
 
 Bu proje, **SB Admin** altyapısı kullanılarak modern web standartlarına uygun şekilde geliştirilmiş bir blog arayüzü denemesidir. Mevcut bir yönetim paneli şablonunun, içerik odaklı bir blog sistemine nasıl entegre edilebileceği ve bileşen bazlı tasarım prensipleri üzerine odaklanılmıştır.
 
