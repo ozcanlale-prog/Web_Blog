@@ -12,37 +12,40 @@ https://github.com/user-attachments/assets/7617bbf9-8500-4185-884e-fa8fb45cfae7
 
 ---
 
-## 🛠️ Teknik Özellikler
+# SB Admin Blog Project
 
-* **Responsive Mimari:** Bootstrap 5 grid sistemi kullanılarak tüm ekran boyutlarına (Mobil, Tablet, Masaüstü) uyumlu hale getirilmiştir.
-* **Bileşen Yönetimi:** Navigasyon barı, yan menü ve alt bilgi (footer) gibi bölümler modüler bir yapıda kurgulanmıştır.
-* **SB Admin Entegrasyonu:** Panel bileşenleri, blog okuma deneyimini optimize edecek şekilde yeniden yapılandırılmıştır.
-* **Performans Odaklılık:** Gereksiz script kullanımlarından kaçınılarak hızlı yüklenme süreleri hedeflenmiştir.
+Bu çalışma, SB Admin şablonunun bir blog sitesine uyarlanmasıyla oluşturulmuş bir arayüz denemesidir. Mevcut bir yapıyı özelleştirerek sade ve kullanışlı bir blog tasarımı elde edilmesi hedeflenmiştir.
 
-## 🚀 Kullanılan Teknolojiler
+---
 
-* **İskelet:** HTML5, CSS3
-* **Framework:** Bootstrap 5
-* **İkon Seti:** FontAwesome
-* **Şablon:** SB Admin (Customized)
+## 🛠️ Özellikler
 
-## 📁 Proje Yapısı
+* **Tam Uyumluluk:** Mobil cihazlarda ve masaüstünde sorunsuz görüntüleme.
+* **Düzenli Yapı:** Navigasyon, yan menü ve alt bilgi gibi alanlar için temiz kod düzeni.
+* **Özelleştirilmiş Şablon:** Admin paneli öğelerinin blog ihtiyaçlarına göre yeniden düzenlenmesi.
 
-Proje dosyaları, ileride yapılacak bir backend entegrasyonuna (PHP, Node.js veya .NET) hazır olacak şekilde düzenli bir klasör hiyerarşisine sahiptir:
+## 🚀 Kullanılanlar
 
-* `/css`: Projenin stil dosyaları.
-* `/js`: Fonksiyonel JavaScript bileşenleri.
-* `/assets`: Görsel materyaller ve ikonlar.
-* `index.html`: Blog ana sayfası.
-* `post.html`: Yazı detay sayfası.
+* **Altyapı:** HTML5 ve CSS3
+* **Kütüphane:** Bootstrap 5
+* **Görsel Set:** FontAwesome
+* **Temel Yapı:** SB Admin
+
+## 📁 Dosya Düzeni
+
+* `/css`: Stil dosyaları.
+* `/js`: Yardımcı kodlar.
+* `/assets`: Resim ve ikonlar.
+* `index.html`: Ana sayfa tasarımı.
+* `post.html`: Yazı okuma sayfası.
 
 ## ⚙️ Kurulum
 
-Yerel ortamda önizlemek için:
+Projeyi yerel bilgisayarınızda açmak için:
 
-1. Depoyu klonlayın: `git clone https://github.com/kullanici-adiniz/blog-projesi.git`
-2. Klasöre gidin: `cd blog-projesi`
-3. `index.html` dosyasını tarayıcınız ile çalıştırın.
+1. Dosyaları indirin veya klonlayın: `git clone https://github.com/kullanici-adiniz/proje-ismi.git`
+2. Proje klasörüne girin: `cd proje-ismi`
+3. `index.html` dosyasını herhangi bir tarayıcıda açın.
 
 ---
-*Bu çalışma, frontend geliştirme yetkinliklerini ve hazır şablon özelleştirme becerilerini sergilemek amacıyla oluşturulmuştur.*
+*Bu proje, arayüz geliştirme ve şablon modifikasyonu üzerine pratik yapmak amacıyla hazırlanmıştır.*
